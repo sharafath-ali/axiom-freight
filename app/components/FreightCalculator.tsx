@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { RATE_PER_CBM, DOC_FEE, WEIGHT_DIVISOR } from "@/lib/config";
+import { RATE_PER_CBM, DOC_FEE, WEIGHT_DIVISOR } from "@/lib/constant";
 
 function useCountUp(target: number, duration = 900): number {
   const [value, setValue] = useState(0);

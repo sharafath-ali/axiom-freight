@@ -1,5 +1,5 @@
 import FreightCalculator from "@/app/components/FreightCalculator";
-import { RATE_PER_CBM, ROUTE } from "@/lib/config";
+import { RATE_PER_CBM, ROUTE } from "@/lib/constant";
 
 export default function Page() {
   return (
