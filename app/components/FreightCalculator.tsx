@@ -219,7 +219,7 @@ export default function FreightCalculator() {
                   Higher of the two values
                 </div>
                 <div className="breakdown-value accent">
-                  {result.chargeableCBM.toFixed(3)} CBM
+                  {result.chargeableCBM.toFixed(2)} CBM
                 </div>
               </div>
 
@@ -227,7 +227,7 @@ export default function FreightCalculator() {
                 <div className="breakdown-icon">🚢</div>
                 <div className="breakdown-label">
                   <strong>Freight Cost</strong>
-                  {result.chargeableCBM.toFixed(3)} × ${RATE_PER_CBM}/CBM
+                  Chargeable CBM × ${RATE_PER_CBM}
                 </div>
                 <div className="breakdown-value">
                   ${freightAnimated.toFixed(2)}
