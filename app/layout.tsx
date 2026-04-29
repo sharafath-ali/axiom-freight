@@ -1,9 +1,41 @@
 import "./globals.css";
 import React from "react";
 
-export const metadata = {
+import type { Metadata, Viewport } from "next";
+
+export const viewport: Viewport = {
+  themeColor: "#0c0c0e",
+  width: "device-width",
+  initialScale: 1,
+};
+
+export const metadata: Metadata = {
   title: "Axiom Freight — Cargo Rate Estimator",
   description: "Instant sea freight rate estimates for LCL shipments on the Guangzhou to Jebel Ali lane.",
+  keywords: [
+    "sea freight",
+    "LCL",
+    "cargo rate estimator",
+    "Guangzhou to Jebel Ali",
+    "freight calculator",
+    "shipping costs",
+    "logistics",
+  ],
+  authors: [{ name: "Axiom Freight" }],
+  robots: "index, follow",
+  openGraph: {
+    title: "Axiom Freight — Cargo Rate Estimator",
+    description: "Instant sea freight rate estimates for LCL shipments on the Guangzhou to Jebel Ali lane.",
+    url: "https://axiom-freight.vercel.app",
+    siteName: "Axiom Freight",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Axiom Freight — Cargo Rate Estimator",
+    description: "Instant sea freight rate estimates for LCL shipments on the Guangzhou to Jebel Ali lane.",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
