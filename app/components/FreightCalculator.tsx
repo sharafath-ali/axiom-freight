@@ -188,10 +188,10 @@ export default function FreightCalculator() {
                 <div className="breakdown-icon">⚖️</div>
                 <div className="breakdown-label">
                   <strong>Weight → CBM</strong>
-                  {result.w.toFixed(2)} kg ÷ {WEIGHT_DIVISOR}
+                  {result.w} kg ÷ {WEIGHT_DIVISOR}
                 </div>
                 <div className="breakdown-value">
-                  {result.weightCBM.toFixed(3)} CBM
+                  {result.weightCBM} CBM
                   {result.weightCBM >= result.v && (
                     <span className="tag winner">USED</span>
                   )}
@@ -205,7 +205,7 @@ export default function FreightCalculator() {
                   As declared
                 </div>
                 <div className="breakdown-value">
-                  {result.v.toFixed(3)} CBM
+                  {result.v} CBM
                   {result.v > result.weightCBM && (
                     <span className="tag winner">USED</span>
                   )}
@@ -219,7 +219,7 @@ export default function FreightCalculator() {
                   Higher of the two values
                 </div>
                 <div className="breakdown-value accent">
-                  {result.chargeableCBM.toFixed(2)} CBM
+                  {result.chargeableCBM} CBM
                 </div>
               </div>
 
@@ -227,7 +227,7 @@ export default function FreightCalculator() {
                 <div className="breakdown-icon">🚢</div>
                 <div className="breakdown-label">
                   <strong>Freight Cost</strong>
-                  Chargeable CBM × ${RATE_PER_CBM}
+                  {result.chargeableCBM} CBM × ${RATE_PER_CBM}
                 </div>
                 <div className="breakdown-value">
                   ${freightAnimated.toFixed(2)}
