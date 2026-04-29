@@ -42,10 +42,6 @@ export default function Page() {
             <div className="route-city-code">{ROUTE.toCode}</div>
             <div className="route-city-name">{ROUTE.toCity}</div>
           </div>
-          <div className="route-meta">
-            <strong>${RATE_PER_CBM}</strong>
-            per CBM
-          </div>
         </div>
 
         <FreightCalculator />

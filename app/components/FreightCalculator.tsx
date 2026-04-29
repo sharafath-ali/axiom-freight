@@ -24,18 +24,6 @@ function useCountUp(target: number, duration = 900): number {
   return value;
 }
 
-function NumTicker({
-  value,
-  decimals = 2,
-  prefix = "",
-}: {
-  value: number;
-  decimals?: number;
-  prefix?: string;
-}) {
-  const animated = useCountUp(value);
-  return <>{prefix}{animated.toFixed(decimals)}</>;
-}
 
 interface CalcResult {
   w: number;
